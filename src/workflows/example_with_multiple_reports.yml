@@ -1,0 +1,14 @@
+name: 'example_with_multiple_reports'
+steps:
+    - taskType: 'analysis'
+      stepNumber: 1
+    - taskType: 'polygonArea'
+      stepNumber: 2
+      dependsOn: 1
+    - taskType: 'reportGeneration'
+      stepNumber: 3
+      dependsOn: [1, 2]
+    - taskType: 'notification'
+      stepNumber: 4
+    - taskType: 'reportGeneration'
+      stepNumber: 5

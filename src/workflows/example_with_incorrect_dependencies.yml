@@ -1,0 +1,11 @@
+name: 'example_with_incorrect_dependencies'
+steps:
+    - taskType: 'analysis'
+      stepNumber: 1
+    - taskType: 'polygonArea'
+      stepNumber: 2
+      dependsOn: 3
+    - taskType: 'notification'
+      stepNumber: 3
+    - taskType: 'reportGeneration'
+      stepNumber: 4

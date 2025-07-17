@@ -1,0 +1,10 @@
+{
+    "workflowName": "example_with_invalid_steps",
+    "clientId": "client123",
+    "input": {
+        "geoJson": {
+            "type": "FourDimensionalCube",
+            "sides": 24
+        }
+    }
+}
